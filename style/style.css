@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    margin-right: 20px;
+}
+.logo span{
+    color: #FF42A5;
+}
+.logo h1{
+    color: #0B0223;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+.nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list li a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+    color: #3C354F;
+}
+.nav-list-icon{
+    background-color: #E7E6E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 30px;
+    border-radius: 8px;
+}
+.nav-list-icon li{
+    list-style: none;
+}
+.nav-list-icon li a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+    color: #3C354F;
+}
+
+/* small devices */
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+    .nav-item{
+        flex-direction: column;
+    }
+    .nav-list{
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+    .nav-list li a{
+        display: flex;
+        margin: 15px 0px;
+    }
+    .nav-list-icon {
+        padding: 12px 15px;
+    }
+    .nav-list-icon li a {
+        margin-right: 20px;
+    }
+}
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar{
+        padding: 40px 60px;
+    }
+    .logo img {
+        margin-right: 10px;
+        width: 70px;
+    }
+    .logo h1 {
+        font-size: 1.75rem;
+    }
+    .nav-item{
+
+    }
+    .nav-list{
+
+    }
+    .nav-list li a {
+        font-size: 1rem;
+        margin-right: 16px;
+    }
+    .nav-list-icon {
+        padding: 12px 10px;
+    }
+    .nav-list-icon li a {
+        margin-right: 16px;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1440px) {
+    .navbar{
+        padding: 40px 100px;
+}
+
+}
